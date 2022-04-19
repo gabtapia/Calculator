@@ -8,7 +8,6 @@
     
 </head>
 <body>
-    <script src="script.js"></script>
     <div class="btn">
         <strong>🌞</strong>
         <strong>🌙</strong>
@@ -37,5 +36,13 @@
             <span class="num equal" onclick="calc.txt.value=eval(calc.txt.value)"><i>=</i></span>
         </form>
     </div>
+    <script>
+        let body = document.querySelector('body');
+        let btn = document.querySelector('.btn');
+
+        btn.onclick = function() {
+        body.classList.toggle('light');
+}
+    </script>
 </body>
 </html>
